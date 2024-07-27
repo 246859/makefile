@@ -52,7 +52,7 @@ build:
 	# build go module
 	go build -trimpath \
 		-ldflags="$(ldflags)" \
-		-o $(output)/$(app)-$(os)-$(arch)-$(mode)/$(app)$(exe) \
+		-o $(output)/$(mode)/$(app)-$(os)-$(arch)/$(app)$(exe) \
 		$(module)
 
 	# resume host environment $(host_os)/$(host_arch)
